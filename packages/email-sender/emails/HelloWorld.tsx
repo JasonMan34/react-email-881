@@ -1,9 +1,8 @@
 import { Button } from '@react-email/button';
 import { Html } from '@react-email/html';
-import { render } from '@react-email/render';
 import * as React from 'react';
 
-function HelloWorld() {
+export default function HelloWorld() {
   return (
     <Html>
       <Button
@@ -15,5 +14,3 @@ function HelloWorld() {
     </Html>
   );
 }
-
-export const getHelloWorldEmail = () => render(<HelloWorld />);
